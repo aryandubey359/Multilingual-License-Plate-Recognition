@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}"/>
+            <title>Output</title>
+        </head>
+        <body>
+            <div class="v2_2864">
+                <div class="v2_2916">
+                    <img style="height: 550px;" src="{{ url_for('static', filename='detected.jpg') }}" alt="image">
+                </div>
+                <div class="v2_2938">
+                    <div class="v2_2924" style="visibility: hidden;">
+                        <span class="v2_2923">License Plate Photo</span>
+                            <!-- <img src="{{ url_for('static', filename='cropped.jpg') }}" alt="image"> -->
+                        <div class="v2_2922">
+
+                        </div>
+                    </div>
+                    <div class="v2_2925">
+                        <span class="v2_2926">License Plate Number</span>
+                        <span class="v2_2928">{{trans_text}}</span>
+                    </div>
+                    <!-- <div class="v2_2929">
+                        <span class="v2_2930">Detected Language</span>
+                        <span class="v2_2931">{{detected_language}}</span>
+                    </div> -->
+                    <div class="v2_2932">
+                        <span class="v2_2933">Translation Confidence</span>
+                        <span class="v2_2934">{{confidence_text}}</span></div>
+                    </div>
+                    <div class="v3_2993">
+                        <img src="{{ url_for('static', filename='MLPR logo.png') }}" style="height: 40px; width: 172.9808807373047px; left: 194px; top: 49px; border-radius: 0px;" alt="">
+                    </div>
+                    <!-- <div class="v3_3002">
+                        <span class="v3_3003">Home</span>
+                        <span class="v3_3004">About us</span>
+                    </div> -->
+                </div>
+            </body>
+    </html>
